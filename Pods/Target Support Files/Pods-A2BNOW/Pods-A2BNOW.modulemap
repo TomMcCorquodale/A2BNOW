@@ -1,0 +1,6 @@
+framework module Pods_A2BNOW {
+  umbrella header "Pods-A2BNOW-umbrella.h"
+
+  export *
+  module * { export * }
+}

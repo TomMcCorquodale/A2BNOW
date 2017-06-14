@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C625670A04FFE894077FD86 /* Pods_A2BNOW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F233EAFA305C263E1D49E7 /* Pods_A2BNOW.framework */; };
 		F46D35F41EF08E65003D5D87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46D35F31EF08E65003D5D87 /* AppDelegate.swift */; };
 		F46D35F61EF08E65003D5D87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46D35F51EF08E65003D5D87 /* ViewController.swift */; };
 		F46D35F91EF08E65003D5D87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46D35F71EF08E65003D5D87 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		822141BDF7E5C27F38DE1ED4 /* Pods-A2BNOW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A2BNOW.debug.xcconfig"; path = "Pods/Target Support Files/Pods-A2BNOW/Pods-A2BNOW.debug.xcconfig"; sourceTree = "<group>"; };
+		E1F233EAFA305C263E1D49E7 /* Pods_A2BNOW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A2BNOW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F13404905F5BE15E5B6155B2 /* Pods-A2BNOW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A2BNOW.release.xcconfig"; path = "Pods/Target Support Files/Pods-A2BNOW/Pods-A2BNOW.release.xcconfig"; sourceTree = "<group>"; };
 		F46D35F01EF08E65003D5D87 /* A2BNOW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A2BNOW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46D35F31EF08E65003D5D87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F46D35F51EF08E65003D5D87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C625670A04FFE894077FD86 /* Pods_A2BNOW.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3809DCE09E36115C992939DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				822141BDF7E5C27F38DE1ED4 /* Pods-A2BNOW.debug.xcconfig */,
+				F13404905F5BE15E5B6155B2 /* Pods-A2BNOW.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6C9104544A8743730DB9C9A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1F233EAFA305C263E1D49E7 /* Pods_A2BNOW.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F46D35E71EF08E65003D5D87 = {
 			isa = PBXGroup;
 			children = (
 				F46D35F21EF08E65003D5D87 /* A2BNOW */,
 				F46D35F11EF08E65003D5D87 /* Products */,
+				3809DCE09E36115C992939DE /* Pods */,
+				6C9104544A8743730DB9C9A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F46D36021EF08E65003D5D87 /* Build configuration list for PBXNativeTarget "A2BNOW" */;
 			buildPhases = (
+				CEC36FBC6C33C988E1632989 /* [CP] Check Pods Manifest.lock */,
 				F46D35EC1EF08E65003D5D87 /* Sources */,
 				F46D35ED1EF08E65003D5D87 /* Frameworks */,
 				F46D35EE1EF08E65003D5D87 /* Resources */,
+				5E878B492F16882C9AD4F355 /* [CP] Embed Pods Frameworks */,
+				0F639C1D797C4B3549DBC7DB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F639C1D797C4B3549DBC7DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-A2BNOW/Pods-A2BNOW-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E878B492F16882C9AD4F355 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-A2BNOW/Pods-A2BNOW-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEC36FBC6C33C988E1632989 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F46D35EC1EF08E65003D5D87 /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		F46D36031EF08E65003D5D87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 822141BDF7E5C27F38DE1ED4 /* Pods-A2BNOW.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HDY79BMXFR;
@@ -274,6 +350,7 @@
 		};
 		F46D36041EF08E65003D5D87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F13404905F5BE15E5B6155B2 /* Pods-A2BNOW.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HDY79BMXFR;
