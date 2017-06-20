@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeVC.swift
 //  A2BNOW
 //
 //  Created by Thomas McCorquodale on 6/13/17.
@@ -9,17 +9,23 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController, MKMapViewDelegate {
+class HomeVC: UIViewController, MKMapViewDelegate {
     
     
     @IBOutlet var mapKit: MKMapView!
+    @IBOutlet var actionBtn: RoundedShadowButton!
     
-
+    var delegate: CenterVCDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mapKit.delegate = self
     }
 
+    @IBAction func actionBtnWasPressed(_ sender: Any) {
+        actionBtn.animateButton(shouldLoad: true, withMessage: nil)
+        
+    }
 
 
 }
